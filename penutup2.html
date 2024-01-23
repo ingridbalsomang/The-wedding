@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan & Ingrid </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nanum+Myeongjo:wght@700&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster+Two&family=Nanum+Myeongjo:wght@700&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <!--simplycountdown-->
+  <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+  <script src="countdown/simplyCountdown.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+</head>
+
+<body class="hero w-90 h-90 p-2 mx-auto text-center d-flex justify-content-center align-items-center text-black">
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <div class="bingkai">
+            <div class="line"></div>
+            <h1>kehadiran</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+        <p>Mohon bantu kami mempersiapkan segala sesuatunya dengan lebih baik dengan mengkonfirmasi kehadiran Anda pada
+          acara pernikahan kami melalui formulir RSVP berikut:</p>
+      </div>
+    </div>
+
+    <form class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" name="nama">
+        </div>
+      </div>
+      <div class="col-12" style="margin-top: 15px;">
+        <div class="mb-3">
+          <label for="ucapan" class="form-label">Ucapan & Doa</label>
+          <input type="text" class="form-control" id="ucapan" name="ucapan">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="jumlah" class="form-label">Jumlah</label>
+          <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="100" length="1" value="">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="status" class="form-label">Konfirmasi</label>
+          <select name="status" id="status" class="form-select">
+            <option selected>Pilih salah satu</option>
+            <option value="1">Hadir</option>
+            <option value="0">Tidak Hadir</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12" style="margin-top: 35px;">
+        <button class="btn btn-primary">Kirim</button>
+      </div>
+    </form>
+    <div class="simply-countdown"></div>
+    <a href="penutup.html" class="btn btn-lg mt-4"><img src="img/panah kiri.png" alt=""></a>
+    <a href="ucapan penutup.html" class="btn btn-lg mt-4"><img src="img/panah kanan.png" alt=""></a>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    simplyCountdown('.simply-countdown', {
+      year: 2028, // required
+      month: 5, // required
+      day: 11, // required
+      hours: 11, // Default is 0 [0-23] integer
+      words: { //words displayed into the countdown
+        days: { singular: 'hari', plural: 'hari' },
+        hours: { singular: 'jam', plural: 'jam' },
+        minutes: { singular: 'menit', plural: 'menit' },
+        seconds: { singular: 'detik', plural: 'detik' }
+      },
+    },
+    )
+  </script>
+</body>
+
+</html>
